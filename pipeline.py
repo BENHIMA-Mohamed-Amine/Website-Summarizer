@@ -9,12 +9,12 @@ from langchain.schema import Document
 from typing import List, Tuple
 
 ### Setting my environment variables:
-import os
-import dotenv
+# import os
+# import dotenv
 
-dotenv.load_dotenv()
-os.environ["LANGCHAIN_TRACING_V2"] = "true"
-os.environ["LANGCHAIN_API_KEY"] = os.getenv("LANGCHAIN_API_KEY")
+# dotenv.load_dotenv()
+# os.environ["LANGCHAIN_TRACING_V2"] = "true"
+# os.environ["LANGCHAIN_API_KEY"] = os.getenv("LANGCHAIN_API_KEY")
 
 ### My constants:
 MODEL_NAME = "meta/llama3-70b-instruct" #Context length: 8k token
