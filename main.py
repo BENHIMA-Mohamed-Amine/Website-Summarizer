@@ -6,7 +6,7 @@ st.title("Website Summarizer")
 
 # My Side-bar:
 with st.sidebar:
-    side_bar_title = "## Configure API kyt"
+    side_bar_title = "## Configure API key"
     st.markdown(side_bar_title)
     with st.form(key="api-key-form", clear_on_submit=True, border=False):
         api_key = st.text_input(
