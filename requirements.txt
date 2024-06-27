@@ -1,0 +1,10 @@
+langchain
+langchain-core
+langchain-community
+langchain-nvidia-ai-endpoints
+transformers
+langsmith
+streamlit
+beautifulsoup4
+lxml
+python-dotenv
