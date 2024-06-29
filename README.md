@@ -31,7 +31,7 @@ pip install -r requirements.txt
 streamlit run main.py
 ```
 ## Website Demo
-![website Demo image](./demo/Screenshot%20from%202024-06-27%2016-37-02.png)
+![website Demo image](./github-images/website-image.png)
 
 ### Contact me:
 for more information or issues here is my email:
