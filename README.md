@@ -2,6 +2,7 @@
 
 ## Description:
 this is a website summarizer that use llama3 70b instruct and NIM accelerator inference provided by NVIDIA. <br/>
+here where you can get the [NIM NVIDIA api key](https://build.nvidia.com/explore/discover) <br/>
 
 the method used for summary is **_map reduced_** method <br/>
 
@@ -22,6 +23,7 @@ to you the response
  ```sh
  touch .ven
  ```
+ - Add `LANGCHAIN_PROJECT` and `LANGCHAIN_API_KEY` environment variables.
 4. install the requirements: <br/>
 ```sh
 pip install -r requirements.txt

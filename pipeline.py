@@ -12,6 +12,8 @@ from typing import List, Tuple
 # import os
 # import dotenv
 
+
+# if you want to use langsmith configure your .env file and decoment this code
 # dotenv.load_dotenv()
 # os.environ["LANGCHAIN_TRACING_V2"] = "true"
 # os.environ["LANGCHAIN_API_KEY"] = os.getenv("LANGCHAIN_API_KEY")
@@ -30,6 +32,10 @@ def load_data(url:str) -> List[Document]:
         }
     )
     return loader.load()
+
+## load the LLM
+def load_llm(api_key: str):
+    return ChatNVIDIA(model=MODEL_NAME, nvidia_api_key=api_key)
 
 
 ## Split documents:
@@ -89,7 +95,7 @@ def create_chain(
 def summary_pipeline(url, chain_type='map_reduce', api_key=None) -> str:
     docs = load_data(url=url)
     chunks = split_documents(docs=docs)
-    llm = ChatNVIDIA(model=MODEL_NAME, api_key=api_key)
+    llm = load_llm(api_key=api_key)
     map_prompt_template, combine_prompt_template = get_prompts_for_map_reduce()
     chain = create_chain(llm=llm, map_prompt_template=map_prompt_template, combine_prompt_template=combine_prompt_template, chain_type=chain_type)    
     summary = chain.run(chunks)
