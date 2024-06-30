@@ -38,4 +38,4 @@ streamlit run main.py
 
 ### Contact me:
 for more information or issues here is my email:
-benhima.mohame.amine@gmail.com
+benhima.mohamed.amine@gmail.com
