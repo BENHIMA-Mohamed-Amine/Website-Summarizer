@@ -34,6 +34,7 @@ streamlit run main.py
 ```
 ## Website Demo
 ![website Demo image](./github-images/website-image.png)
+[try the tool for free](https://benhima-website-summarizer.streamlit.app/)
 
 ### Contact me:
 for more information or issues here is my email:
